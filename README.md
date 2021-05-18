@@ -3,8 +3,7 @@ Pixo is a Retro Styled Theme for CTFd which consists of numerous features like O
 
 Compatible with CTFd **Version 3.3.0**
 
-<details>
-  <summary>Show Screenshots</summary>
+Few Screenshots:
   
   ![Index Page](https://i.imgur.com/lL7zYrg.gif "Index Page")
   
@@ -15,7 +14,7 @@ Compatible with CTFd **Version 3.3.0**
   ![Score Board](https://i.imgur.com/COI4yAo.png "Score Board")
   
   ![Login Page](https://i.imgur.com/206O99m.png "Login Page")
-</details>
+
 
 ### Installation Steps:
 Open your Docker container's terminal then insert the following Command:
