@@ -9,34 +9,34 @@
 			<h1>{{ user.name }}</h1>
 
 			{% if user.team_id %}
-				<h2>
+				<div>
 					<a href="{{ url_for('teams.private') }}">
-						<span class="badge badge-secondary">
+						<span class="pbadge pbadge-secondary">
 							{{ user.team.name }}
 						</span>
 					</a>
-				</h2>
+				</div>
 			{% endif %}
 
 			{% if user.oauth_id %}
 				<a href="https://majorleaguecyber.org/u/{{ user.name }}">
-					<h3><span class="badge badge-primary">Official</span></h3>
+					<div><span class="pbadge pbadge-primary">Official</span></div>
 				</a>
 			{% endif %}
 
 			{% if user.affiliation %}
-				<h3 class="d-inline-block">
-					<span class="badge badge-primary">{{ user.affiliation }}</span>
-				</h3>
+				<div class="d-inline-block">
+					<span class="pbadge pbadge-primary">{{ user.affiliation }}</span>
+				</div>
 			{% endif %}
 
 			{% if user.country %}
-				<h3 class="d-inline-block">
-					<span class="badge badge-primary">
+				<div class="d-inline-block">
+					<span class="pbadge pbadge-primary">
 						<i class="flag-{{ user.country.lower() }}"></i>
 						{{ lookup_country_code(user.country) }}
 					</span>
-				</h3>
+				</div>
 			{% endif %}
 
 			{% for field in user.fields %}
