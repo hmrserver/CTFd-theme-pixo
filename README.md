@@ -4,15 +4,15 @@ Pixo is a Retro Styled Theme for CTFd which consists of numerous features like O
 Compatible with CTFd **Version 3.3.0**
 
 Few Screenshots:
-  
+
   ![Index Page](https://i.imgur.com/lL7zYrg.gif "Index Page")
-  
+
   ![Challenge Page](https://i.imgur.com/o1XHK2t.png "Challenge Page")
-  
+
   ![Challenge Popup](https://i.imgur.com/7YAQFs5.png "Challenge Popup")
-  
+
   ![Score Board](https://i.imgur.com/COI4yAo.png "Score Board")
-  
+
   ![Login Page](https://i.imgur.com/206O99m.png "Login Page")
 
 
@@ -28,6 +28,16 @@ That's it! Now you are good to goo..
 ## Custom License
 1. User may edit the item, but can't replace My Theme Copyright & CTFd Copyright.
 1. User need confirmation with us before removing copyright mark (footer).
+
+## Change
+
+In "pixo/static/css/main.min.css",
+Search "[@Keyframes](https://github.com/Keyframes) flicker",
+Change "0%-100%" to "0%" and "100%", delete the middle,
+and
+Change the value of the parameter "opacity" to ".5".
+
+To solve the problem of too much flickering.
 
 
 ## Credits
